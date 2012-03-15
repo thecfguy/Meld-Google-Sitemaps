@@ -87,8 +87,8 @@
 	
 		<cfloop query="qSites">
 			<cfif siteID neq "default">
-				<cfset variables.instance.extensionManager.syncDefinitions( 'default',siteID,'Page','default' ) />
-				<cfset variables.instance.extensionManager.syncDefinitions( 'default',siteID,'Portal','default' ) />
+				<cfset variables.instance.extensionManager.syncDefinitions( 'default',siteID,'Page','Default' ) />
+				<cfset variables.instance.extensionManager.syncDefinitions( 'default',siteID,'Portal','Default' ) />
 				<cfset variables.instance.extensionManager.syncDefinitions( 'default',siteID,'Custom','MeldGoogleSitemaps' ) />
 			</cfif>
 		</cfloop>
